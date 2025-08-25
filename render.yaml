@@ -1,9 +1,8 @@
 services:
   - type: web
-    name: my-php-server 
+    name: my-php-app
     plan: free
-    runtime: php
+    env: php
     buildCommand: "composer install --no-dev"
     startCommand: "php -S 0.0.0.0:$PORT -t ."
     rootDir: "."
-    
