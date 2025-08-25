@@ -4,5 +4,4 @@ services:
     plan: free
     runtime: docker
     buildCommand: "composer install --no-dev"
-    startCommand: "php -S 0.0.0.0:$PORT -t ."
     rootDir: "."
