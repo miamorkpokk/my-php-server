@@ -2,7 +2,7 @@ services:
   - type: web
     name: my-php-app
     plan: free
-    env: php
+    env: php-8.2
     buildCommand: "composer install --no-dev"
     startCommand: "php -S 0.0.0.0:$PORT -t ."
     rootDir: "."
